@@ -97,6 +97,50 @@ Try Emmet, write `a#my-id` and by pressing `tab` it will create an `a` automatic
 <a href="" id="my-id"></a>
 ```
 
+Try Emmet, write `p{"This is my text"}` and by pressing `tab` it will create an `p` automatically with that text
+
+```html
+<p>"This is my text"</p>
+```
+
+Try Emmet, write `ul>li*3` and by pressing `tab` it will create an `ul` automatically with that quantity of elements
+
+```html
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+```
+
+Try Emmet, write `ul>li{$}*5` and by pressing `tab` it will create an `ul` automatically with that quantity of enumerated elements
+
+```html
+<ul>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+</ul>
+```
+
+Try Emmet, write `nav>ul>li>a*5` and by pressing `tab` it will create that automatically 
+
+```html
+<nav>
+  <ul>
+    <li>
+      <a href=""></a>
+      <a href=""></a>
+      <a href=""></a>
+      <a href=""></a>
+      <a href=""></a>
+    </li>
+  </ul>
+</nav>
+```
+
 ## Project Structure & File's Organization
 
 - Demo Project - https://www.joystick.com.mx/udemy/
@@ -149,8 +193,434 @@ project_folder > `index.html`
 </html>
 ```
 
-
 ## HTML5, CSS3, SASS
+
+project_folder > `index.html`
+
+### Main HTML5 Tags 
+
+- https://placeholder.com/
+
+```html
+<div class="container">
+  <div class="row">
+    <div class="col">
+      
+        <!-- STRUCTURALS -->
+        STRUCTURAL ELEMENTS
+        <br><br>
+        <nav>
+        	NAV: Used for Navigation Bars 
+        </nav>
+
+        <header>
+        	HEADER: Used for Headlines of Elements
+        </header>
+
+        <section>
+        	SECTION: Used to divide, is a container
+        </section>
+
+        <div>
+        	DIV: used to divide and structure, is a container
+        </div>
+
+
+        <!-- TEXTS & IMAGES -->
+       	<p>
+       		P: Texts or Content
+       		<br><br>
+       		<strong>Block Elements</strong> are the ones that cover all the width of the screen or its father container
+       		<br><br>
+       		<strong>Inline</strong> are the ones that just cover the space needed to be shown.
+       		Examples: span, small, sub, sup, a, strong, em, i
+       	</p>
+
+       	<a href="">
+       		A: Link
+       	</a>
+
+       	<br>
+
+       	<span>
+       		SPAN: Small blocks of text
+       	</span>
+
+       	<br>
+
+		<small>
+			SMALL: Small text
+		</small>
+
+		<br>
+
+		H2O
+		H<sup>2</sup>O
+		H<sub>2</sub>O
+
+		<br>
+
+		<strong>STRONG: Bold Text</strong>
+
+		<br>
+
+		<i>I: Italic Text</i>
+
+		<br>
+
+		<em>EM: Italic Text</em>
+
+		<br>
+
+		NUMBERED LISTS
+		<ol>
+			<li>One</li>
+			<li>Two</li>
+			<li>Three</li>
+		</ol>
+
+		BULLET LISTS
+		<ul>
+			<li>One</li>
+			<li>Two</li>
+			<li>Three</li>
+		</ul>
+
+		<img src="https://via.placeholder.com/300" alt="Text Alternative">
+
+
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Age</th>
+					<th>Profession</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>Roberto Orozco</td>
+					<td>23 years</td>
+					<td>Developer</td>
+				</tr>
+
+				<tr>
+					<td>John Doe</td>
+					<td>25 years</td>
+					<td>Designer</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<style>
+			body {
+					background-color:grey;
+			}
+			input, textarea, select, option {
+				width: 100%
+			}
+		</style>
+
+		<br><br>
+
+		<!-- FORMS -->
+		FORMS
+		<br>
+
+		<form action="">
+
+			Text Type
+			<input type="text">
+
+			Name Type
+			<input type="name">
+
+			Email Type
+			<input type="email">
+
+			Number Type
+			<input type="number">
+
+			Color Picker Type
+			<input type="color">
+
+			Checkbox 
+			<label for="checkboxes">1st checkbox</label>
+			<input type="checkbox" value="1st checkbox" id="checkboxes">
+			<input type="checkbox" value="1st checkbox" id="checkboxes">
+			<input type="checkbox" value="1st checkbox" id="checkboxes">
+			<input type="checkbox" value="1st checkbox" id="checkboxes">
+
+			<textarea name="" id="" cols="30" rows="10"></textarea>
+
+			<select name="" id="">
+				<option value="">Option 1</option>
+				<option value="">Option 2</option>
+				<option value="" selected="">Option 3</option>
+			</select>
+
+			Radio Type
+			<input type="radio">
+			<input type="radio">
+			<input type="radio">
+			<input type="radio">
+
+
+			Submit Type - Send the Form
+			<input type="submit">
+
+		</form>
+
+		<button>This is a button</button>
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+```
+
+### Main Properties and CSS3 Selectors
+
+project_folder > `styles.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3 Intro</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+	<!-- Our Styles -->
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+	<h1>This will be huge!</h1>
+	<p>This will be red</p>
+	<a href="">This is a green link!</a>
+
+	<div>
+		<p>I'm inside a Pink Container</p>
+	</div>
+
+	<div class="myclass">
+		<p>I'm inside a Container with Class!</p>
+	</div>
+
+	<div id="identifier">
+		White Text!
+		<p>I'm inside a Container with Unique Id</p>
+	</div>
+
+</body>
+</html>
+```
+
+project_folder > css > `styles.css`
+```css
+
+body 
+{
+	padding: 50px;
+}
+
+
+
+/*
+STRUCTURE OF CSS3
+selector
+{
+	attribute: value;
+	attribute: value;
+}
+
+USE ColorPicker
+cmd+shift+c
+*/
+
+h1
+{
+	font-size: 60px;
+}
+
+p
+{
+	color: red;
+}
+
+a
+{
+	color: green;
+}
+
+div
+{
+	background-color: #eb6;
+}
+
+div p 
+{
+	color: blue;
+}
+
+.myclass
+{
+	background-color: #91D4FF;
+	padding: 15px;
+	text-align: center;
+	border-radius: 10px;
+	margin: 10px 0px;
+}
+
+.myclass p 
+{
+	font-size: 28px;
+	color: #91FFFF;
+}
+
+#identifier 
+{
+	background-color: #AABBCC;
+	color: white;
+	padding: 50px;
+	text-align: center;
+	border-radius: 20px;
+}
+
+#identifier p
+{
+	color: #FFE2D1FF;
+}
+```
+
+### Intro to SASS
+
+project_folder > `styles.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3 Intro</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+	<!-- Our Styles -->
+	<link rel="stylesheet" href="css/styles2.css">
+</head>
+
+<body>
+	<h1>This will be huge!</h1>
+	<p>This will be red</p>
+	<a href="">This is a green link!</a>
+
+	<div>
+		<p>I'm inside a Pink Container</p>
+	</div>
+
+	<div class="myclass">
+		<p>I'm inside a Container with Class!</p>
+	</div>
+
+	<div id="identifier">
+		White Text!
+		<p>I'm inside a Container with Unique Id</p>
+	</div>
+
+	<!-- Separation -->
+	<div class="one">
+		<div class="two">
+			<div class="three">
+				<div class="four">
+					<h3 class="five">I'm a h3</h3>
+					<p class="six"> Hello World, click <a href="" class="seven">here</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
+```
+
+project_folder > css > `styles2.sass`
+```sass
+$base: #AABBCC
+
+body
+	padding: 50px
+
+h1
+	font-size: 60px
+
+p 
+	color: red
+
+a 
+	color: green 
+
+div 
+	background-color: #eb6
+	p 
+		color: blue
+
+.myclass
+	background-color: #91D4FF
+	padding: 15px
+	text-align: center
+	border-radius: 10px
+	margin: 10px 0px
+	p 
+		font-size: 28px
+		color: #91FFFF
+
+#identifier
+	background-color: $base
+	color: white
+	padding: 50px
+	text-align: center
+	border-radius: 20px
+	p 
+		color: white
+
+.one
+	margin: 50px 0px
+	padding: 20px
+	background-color: transparentize(black, .9)
+	.two
+		padding: 20px
+		background-color: transparentize(black, .7)
+		.three
+			padding: 20px
+			background-color: transparentize(black, .5)
+			.four
+				padding: 20px
+				background-color: transparentize(black, .3)
+				.five
+					color: white
+					text-align: center
+					font-size: 40px
+				.six
+					color: white 
+					.seven
+						color: white
+						text-decoration: underline
+						font-weight: bold
+```
 
 ## Home & Company Section
 
