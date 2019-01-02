@@ -998,7 +998,7 @@ p
 // Styles of NavBar
 nav
 	width: 100%
-	background-color: transparent
+	background-color: lighten(red, 40)
 	padding: 10px 0px
 	position: fixed
 	border-bottom: 1px solid transparent
