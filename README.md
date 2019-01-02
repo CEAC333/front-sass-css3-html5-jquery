@@ -1010,10 +1010,17 @@ nav
 			@extend .tSlow;
 	ul 
 		margin: 0px 
+		margin-top: 8px
 		padding: 0px 
 		text-align: right 
 		@extend .tSlow;
-		//.link-active
+		.link-active
+			a 
+				color: $base !important
+				&:after 
+					width: 100%
+					background-color: $base 
+					@extend .tSlow;
 		li 
 			display: inline-block
 			padding: 0px 10px
@@ -1027,7 +1034,7 @@ nav
 					content: ''
 					position: absolute
 					width: 100%
-					background-color: red
+					background-color: transparent
 					height: 1px
 					@extend .tSlow;
 				&:after 
@@ -1036,11 +1043,25 @@ nav
 					top: 100%
 					left: 0px 
 					width: 100%
-					background-color: red 
+					background-color: transparent 
 					height: 1px 
 					@extend .tSlow;
 				&:hover
 					background-color: purple
+					text-decoration: none 
+					color: $base
+					&:before 
+						width: 0%
+						background-color: $base 
+					&:after
+						width: 100%
+						background-color: $base
+```
+
+project_folder > `index.html`
+
+```html
+
 ```
 
 
