@@ -624,6 +624,426 @@ div
 
 ## Home & Company Section
 
+### General HTML5 Structure, Meta Tags & Meta Viewport
+
+project_folder > `index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Blackparadox</title>
+
+	<!-- SEO natural -->
+	<meta name="author" content="Joystick">
+	<meta name="copyright" content="&copy; Joystick 2017. Todos los derechos reservados.">
+	<meta name="email" content="hellow@joystick.com.mx">
+	<meta name="robots" content="index,follow">
+	<meta name="description" content="Expertos en fotografía, retratamos los momentos que siempre quieres conservar contigo, con más de 15 años de experiencia en crear recuerdos inolvidables">
+	<meta name="keywords" content="foto, fotografía, cámara, digital, agencia, recuerdos, video, eventos, quince años, bodas, aniversario">
+
+	<!-- Responsividad -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	
+
+
+	
+</head>
+<body>
+
+
+
+
+
+	
+</body>
+</html>
+```
+
+### Adding Social Cards for Facebook & Twitter
+
+project_folder > `index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Blackparadox</title>
+
+	<!-- SEO natural -->
+	<meta name="author" content="Joystick">
+	<meta name="copyright" content="&copy; Joystick 2017. Todos los derechos reservados.">
+	<meta name="email" content="hellow@joystick.com.mx">
+	<meta name="robots" content="index,follow">
+	<meta name="description" content="Expertos en fotografía, retratamos los momentos que siempre quieres conservar contigo, con más de 15 años de experiencia en crear recuerdos inolvidables">
+	<meta name="keywords" content="foto, fotografía, cámara, digital, agencia, recuerdos, video, eventos, quince años, bodas, aniversario">
+
+	<!-- Responsividad -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+	<!-- Social Cards -->
+	<meta property="og:url" content="https://www.blackparadox.com">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Blackparadox - Fotografía">
+	<meta property="og:description" content="Expertos en fotografía, retratamos los momentos que siempre quieres conservar contigo, con más de 15 años de experiencia en crear recuerdos inolvidables">
+	<meta property="og:image" content="https://www.blackparadox.com/images/logo_blackparadox.svg">
+	
+
+
+	
+</head>
+<body>
+
+
+
+
+
+	
+</body>
+</html>
+```
+
+### Implementing Bootstrap 4 from CDN
+
+project_folder > `index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Blackparadox</title>
+
+	<!-- SEO natural -->
+	<meta name="author" content="Joystick">
+	<meta name="copyright" content="&copy; Joystick 2017. Todos los derechos reservados.">
+	<meta name="email" content="hellow@joystick.com.mx">
+	<meta name="robots" content="index,follow">
+	<meta name="description" content="Expertos en fotografía, retratamos los momentos que siempre quieres conservar contigo, con más de 15 años de experiencia en crear recuerdos inolvidables">
+	<meta name="keywords" content="foto, fotografía, cámara, digital, agencia, recuerdos, video, eventos, quince años, bodas, aniversario">
+
+	<!-- Responsividad -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+	<!-- Social Cards -->
+	<meta property="og:url" content="https://www.blackparadox.com">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Blackparadox - Fotografía">
+	<meta property="og:description" content="Expertos en fotografía, retratamos los momentos que siempre quieres conservar contigo, con más de 15 años de experiencia en crear recuerdos inolvidables">
+	<meta property="og:image" content="https://www.blackparadox.com/images/logo_blackparadox.svg">
+	
+	<!-- Bootstrap 4 CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+
+	
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Hola mundo, tengo bootstrap!</h1>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!-- Bootstrap 4 JS CDN -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<script src="js/slippry.min.js"></script>
+	
+</body>
+</html>
+```
+
+### Linking local style files
+
+project_folder > `index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Blackparadox</title>
+
+	<!-- SEO natural -->
+	<meta name="author" content="Joystick">
+	<meta name="copyright" content="&copy; Joystick 2017. Todos los derechos reservados.">
+	<meta name="email" content="hellow@joystick.com.mx">
+	<meta name="robots" content="index,follow">
+	<meta name="description" content="Expertos en fotografía, retratamos los momentos que siempre quieres conservar contigo, con más de 15 años de experiencia en crear recuerdos inolvidables">
+	<meta name="keywords" content="foto, fotografía, cámara, digital, agencia, recuerdos, video, eventos, quince años, bodas, aniversario">
+
+	<!-- Responsividad -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+	<!-- Social Cards -->
+	<meta property="og:url" content="https://www.blackparadox.com">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Blackparadox - Fotografía">
+	<meta property="og:description" content="Expertos en fotografía, retratamos los momentos que siempre quieres conservar contigo, con más de 15 años de experiencia en crear recuerdos inolvidables">
+	<meta property="og:image" content="https://www.blackparadox.com/images/logo_blackparadox.svg">
+	
+	<!-- Bootstrap 4 CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+	<!-- Estilos -->
+	<link rel="stylesheet" href="css/main.css">
+
+
+	
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Hola mundo, tengo bootstrap!</h1>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!-- Bootstrap 4 JS CDN -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<script src="js/slippry.min.js"></script>
+	
+</body>
+</html>
+```
+project_folder > css > `main.sass`
+
+```sass
+// Blackparadox
+// Styles 2017
+// Version: 1.0.1
+
+// Color Variables
+
+// General Styles
+
+// Styles of Inputs, Textarea, Buttons
+
+// Styles of NavBar
+```
+
+### Creating the NavBar
+
+- https://getbootstrap.com/docs/4.2/layout/overview/
+
+project_folder > `index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Blackparadox</title>
+
+	<!-- SEO natural -->
+	<meta name="author" content="Joystick">
+	<meta name="copyright" content="&copy; Joystick 2017. Todos los derechos reservados.">
+	<meta name="email" content="hellow@joystick.com.mx">
+	<meta name="robots" content="index,follow">
+	<meta name="description" content="Expertos en fotografía, retratamos los momentos que siempre quieres conservar contigo, con más de 15 años de experiencia en crear recuerdos inolvidables">
+	<meta name="keywords" content="foto, fotografía, cámara, digital, agencia, recuerdos, video, eventos, quince años, bodas, aniversario">
+
+	<!-- Responsividad -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+	<!-- Social Cards -->
+	<meta property="og:url" content="https://www.blackparadox.com">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Blackparadox - Fotografía">
+	<meta property="og:description" content="Expertos en fotografía, retratamos los momentos que siempre quieres conservar contigo, con más de 15 años de experiencia en crear recuerdos inolvidables">
+	<meta property="og:image" content="https://www.blackparadox.com/images/logo_blackparadox.svg">
+	
+	<!-- Bootstrap 4 CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+	<!-- Estilos -->
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon/favicon.ico?v=2" type="image/x-icon">
+	<link rel="icon" href="favicon/favicon.ico?v=2" type="image/x-icon">
+
+
+	
+</head>
+<body>
+	
+	<!-- navigation -->
+	<nav id="nav">
+		<div class="container-fluid">
+			<div class="row">
+				<!-- Our logo -->
+				<div class="col-xl-2">
+					<a href="http://www.blackparadox.com" class="logo">
+						<img src="images/logo.svg" alt="Logo Blackparadox">
+					</a>
+				</div>
+				<!-- Our navigation links -->
+				<div class="col-xl-10">
+					<ul>
+						<li class="link-active"><a href="index.html">Home</a></li>
+						<li><a href="index.html#company">Company</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>		
+	</nav>
+	<!-- ends navigation -->
+
+	<!-- slider -->
+	<!-- ends slider -->
+
+	<!-- company section -->
+	<!-- ends -->
+
+	<!-- services section -->
+	<!-- ends -->
+
+	<!-- footer -->
+	<!-- ends footer -->
+
+
+
+
+
+
+
+
+
+	<!-- Bootstrap 4 JS CDN -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<script src="js/slippry.min.js"></script>
+	
+</body>
+</html>
+```
+
+project_folder > `portfolio.html`
+
+```html
+<h1>You are in Portfolio Section</h1>
+<a href="index.html">Return</a>
+```
+
+project_folder > `contact.html`
+
+```html
+<h1>You are in Contact Section</h1>
+<a href="index.html">Return</a>
+```
+
+### Adding Styles to the NavBar - Part 1
+
+project_folder > css > `main.sass`
+
+```sass
+// Blackparadox
+// Styles 2017
+// Version: 1.0.1
+
+// Color Variables
+$base: #060a0f
+$sec: #494949
+$outline: #ff6600
+$text: transparentize($sec, .5)
+
+// General Styles
+a 
+	margin: 0px
+	padding: 0px
+	@extend .tSlow;
+	&:hover
+		color: $outline
+h1, h2, h3, h4, h5, h6
+	color: $base
+p 
+	color: $sec
+
+.tSlow
+	-webkit-transition: all 0.5s ease-in-out
+	-o-transition: all 0.5s ease-in-out
+	transition: all 0.5s ease-in-out
+.pad_200
+	padding: 200px 0px
+.center
+	text-align: center
+	margin: 0px auto
+.main-title
+	font-size: 60px
+	font-weight: bold
+	color: $base
+
+
+// Styles of Inputs, Textarea, Buttons
+
+// Styles of NavBar
+nav
+	width: 100%
+	background-color: transparent
+	padding: 10px 0px
+	position: fixed
+	border-bottom: 1px solid transparent
+	z-index: 100
+	@extend .tSlow;
+	.logo
+		img
+			width: 100%
+			@extend .tSlow;
+	ul 
+		margin: 0px 
+		padding: 0px 
+		text-align: right 
+		@extend .tSlow;
+		//.link-active
+		li 
+			display: inline-block
+			padding: 0px 10px
+			a 
+				position: relative 
+				text-decoration: none
+				font-size: 16px
+				color: $text 
+				@extend .tSlow;
+				&:before 
+					content: ''
+					position: absolute
+					width: 100%
+					background-color: red
+					height: 1px
+					@extend .tSlow;
+				&:after 
+					content: ''
+					position: absolute 
+					top: 100%
+					left: 0px 
+					width: 100%
+					background-color: red 
+					height: 1px 
+					@extend .tSlow;
+				&:hover
+					background-color: purple
+```
+
+
 ## Portfolio Section
 
 ## Contact Section
